@@ -48,7 +48,7 @@ Pretrained models (tSNE or HRMS) are included in the checkpoint directory.
 
 Our model achieves the following performance:
 
->![tSNE4HDML_table.png](https://github.com/yoheyokubo/Images/blob/f33751e5a4c5f4910d15836a81e332f62ded444b/tSNE4HDML_table.png) 
+>![MCL4PHI_table.png](https://github.com/yoheyokubo/Images/blob/096085123e88f741523ad6a0bff298180541e368/MCL4PHI_table.png) 
 
 
 ## Contributing
