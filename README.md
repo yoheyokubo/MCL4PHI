@@ -3,7 +3,7 @@
 This repository is the official implementation of [Multi-Instance Contrastive Learning with Binomial
 K-Mers for Phage Host Interaction Prediction](https://arxiv.org/abs/2030.12345). 
 
->![tSNE4HDML_figure.png](https://github.com/yoheyokubo/Images/blob/f33751e5a4c5f4910d15836a81e332f62ded444b/tSNE4HDML_figure.png)
+>![MCL4PHI_figure.jpg](https://github.com/yoheyokubo/Images/blob/096085123e88f741523ad6a0bff298180541e368/MCL4PHI_figure.jpg)
 
 ## Requirements
 
