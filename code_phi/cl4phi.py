@@ -1,3 +1,5 @@
+# code reference: https://github.com/yaozhong/CL4PHI
+
 from collections import defaultdict
 from runner import Runner
 from data import Data, InteractionDataset, get_dataloaders, get_graphloaders
