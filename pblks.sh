@@ -1,7 +1,7 @@
 CODE="code_phi/main.py"
 
 model="pblks"
-out_dir="out_cherry_v3"
+out_dir="out_cherry"
 data_dir="data_cherry"
 data="cherry"
 granularity="species"
