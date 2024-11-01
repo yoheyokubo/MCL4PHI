@@ -6,43 +6,41 @@ K-Mers for Phage Host Interaction Prediction](https://arxiv.org/abs/2030.12345).
 >![MCL4PHI_figure.jpg](https://github.com/yoheyokubo/Images/blob/096085123e88f741523ad6a0bff298180541e368/MCL4PHI_figure.jpg)
 
 ## Requirements
-
-To install requirements:
+### Codes
+Our scripts require a single GPU (but not for PB-LKS). To run the codes, install pytorch_geometric:
 
 ```setup
-pip install -r requirements.txt
+pip install pytorch_geometric
 ```
 
-Our scripts require a single GPU. As for the dataset, we offer several options depending on you interests:
--  If you do not care about the dataset and just want to run our scripts, please run script files (train_*.sh) in the following sections because we uploaded preprocessed data in our data directory.
--  If you are interested in how the preprocessed data was produced, please first download [host.fasta](https://zenodo.org/records/11276021) and locate it below the data directory. Next, erase parts related to the preprocessed data *species_fcgr_np* in script files (train_*.sh).
--  If you are interested in how the original dataset (host.fasta) and meta information (*.json) were created, please see our notebook in the data directory.
+Note that if you are goingt to run not only PB-LKS and CL4PHI and and MCL4PHI, but also CHERRY, you might want to install pytorch_geometric following [the instruction](https://github.com/pyg-team/pytorch_geometric/discussions/7866#discussioncomment-8829525) so as not to get errors about NeighborSampler.
+
+### Dataset
+As for the dataset, we offer several options depending on you interests:
+-  If you do not care about the dataset and just want to run our scripts, please download and unzip [data_preprocessed.zip](https://doi.org/10.5281/zenodo.14022091) from Zendo under the *data_cherry* directory.
+-  If you are interested in how the preprocessed data was produced, please download and unzip [data_draw.zip](https://doi.org/10.5281/zenodo.14022091) under the same directory and run the sripts in the *code_preprocess* directory. Note that the preprocessing would take several days, maybe a week, to be done.
 
 ## Training
 
-To train the model(s) in the paper, run this command for our method:
+To train the model(s) in the paper, run this command for our method (MCL4PHI):
 
 ```train
-bash train_tsne.sh
+bash cl4phi.sh
 ```
-for HRMS:
-
-```train
-bash train_hrms.sh
-```
+with *aug="0.0:0.5:0.9:0.99:0.999"* and for CL4PHI with  *aug="0.0"*. PB-LKS and CHERRY can be run in the same way using *pblks.sh* and *cherry.sh*, respectively.
 
 ## Evaluation
 
 To evaluate trained models, run:
 
 ```eval
-bash eval.sh
+bash evaluate.sh
 ```
-Please change the hyperparameter _model_checkpoint_ in the file according to which model you want to test: our method (tSNE) or HRMS.
+Please change the hyperparameter _model_pretrained_ in the file according to which model you want to test.
 
 ## Pre-trained Models
 
-Pretrained models (tSNE or HRMS) are included in the checkpoint directory.
+Pretrained models are included in the *our_cherry* directory.
 
 ## Results
 
