@@ -13,7 +13,7 @@ Our scripts require a single GPU (but not for PB-LKS). To run the codes, install
 pip install pytorch_geometric
 ```
 
-Note that if you are goingt to run not only PB-LKS and CL4PHI and and MCL4PHI, but also CHERRY, you might want to install pytorch_geometric following [the instruction](https://github.com/pyg-team/pytorch_geometric/discussions/7866#discussioncomment-8829525) so as not to get errors about NeighborSampler.
+Note that if you are goingt to run not only PB-LKS and CL4PHI and MCL4PHI, but also CHERRY, you might want to install pytorch_geometric following [the instruction](https://github.com/pyg-team/pytorch_geometric/discussions/7866#discussioncomment-8829525) so as not to get errors about NeighborSampler.
 
 ### Dataset
 As for the dataset, we offer several options depending on you interests:
