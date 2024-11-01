@@ -40,7 +40,7 @@ Please change the hyperparameter _model_pretrained_ in the file according to whi
 
 ## Pre-trained Models
 
-Pretrained models (with a seed 123) are included in the *our_cherry* directory.
+Pretrained models (with a seed 123) are included in the *out_cherry* directory.
 
 ## Results
 
