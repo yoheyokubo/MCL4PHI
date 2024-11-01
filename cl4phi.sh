@@ -3,7 +3,7 @@ CODE="code_phi/main.py"
 
 model="cl4phi"
 epoch=150
-out_dir="out_cherry_v5"
+out_dir="out_cherry"
 data_dir="data_cherry"
 data="cherry"
 granularity="species"
