@@ -28,7 +28,7 @@ class Runner():
             with open(os.path.splitext(args.model_pretrained)[0] + '-args.pkl', 'rb') as f:
                 args = pickle.load(f)
             save_path = self.create_path(args)
-            model_save_path = os.path.join(args.out_dir, save_path+'.pth')
+            model_save_path = os.path.join(os.path.dirname(args.model_pretrained), save_path+'.pth')
         
         os.makedirs(args.out_dir, exist_ok=True)
         self.model_save_path = model_save_path
