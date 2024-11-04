@@ -18,7 +18,7 @@ Note that if you are goingt to run not only PB-LKS and CL4PHI and MCL4PHI, but a
 ### Dataset
 As for the dataset, we offer several options depending on you interests:
 -  If you do not care about the dataset and just want to run our scripts, please download and unzip [data_preprocessed.zip](https://doi.org/10.5281/zenodo.14022091) from Zendo under the *data_cherry* directory.
--  If you are interested in how the preprocessed data was produced, please download and unzip [data_raw.zip](https://doi.org/10.5281/zenodo.14022091) under the same directory and run the sripts in the *code_preprocess* directory. Note that the preprocessing would take several days, maybe a week, to be done.
+-  If you are interested in how the preprocessed data was produced, please download and unzip [data_raw.zip](https://doi.org/10.5281/zenodo.14022091) under the same directory and run the sripts in the *code_preprocess* directory. Note that the preprocessing would take several days in total, perhaps a week, to be done.
 
 ## Training
 
